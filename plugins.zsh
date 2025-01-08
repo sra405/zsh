@@ -39,3 +39,9 @@ bindkey '^[[B' history-substring-search-down
 
 # aliases
 source $HOME/.zsh/aliases.zsh
+
+# profile-secrets
+# https://github.com/gmatheu/shell-plugins?tab=readme-ov-file#profile-secrets
+source $HOME/.zsh/profile-secrets.zsh
+profile-secrets-source
+

@@ -21,7 +21,7 @@ alias shared='cd $HOME/Documents/repos/shared'
 # git
 alias pull='git pull'
 alias push='git push'
-alias cm='cz commit'
+alias cm='git add . && cz commit'
 alias co='git checkout'
 alias main='git checkout main'
 
@@ -33,3 +33,5 @@ alias build='docker-compose build'
 # yarn/npm
 alias yi='yarn install'
 alias ni='npm i'
+alias yr='yarn run'
+alias nr='npm run'
