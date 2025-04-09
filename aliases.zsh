@@ -17,6 +17,7 @@ alias le='cd $HOME/Documents/repos/learner-experience'
 alias personal='cd $HOME/Documents/repos/personal'
 alias infra='cd $HOME/Documents/repos/infra'
 alias shared='cd $HOME/Documents/repos/shared'
+alias ed='cd $HOME/Documents/repos/educators'
 
 # git
 alias pull='git pull'
