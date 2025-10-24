@@ -3,7 +3,7 @@ source $HOME/.zsh/key-bindings.zsh
 
 # setup using https://gist.github.com/raftheunis87/607682946d0ef041ce1ad28c37456b7d
 # syntax highlighting plugin
-source $HOME/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
+source $HOME/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # completion plugin
 source $HOME/.zsh/completion.zsh

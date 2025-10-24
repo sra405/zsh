@@ -1,3 +1,11 @@
+function run_or_install() {
+  if ! npm list -g --depth=0 "$1" > /dev/null 2>&1; then
+    echo "Installing $1 globally..."
+    npm install -g "$1"
+  fi
+  "$@"
+}
+
 alias ls='ls -G' # colorize `ls` output
 alias zshreload='source ~/.zshrc' # reload ZSH
 alias grep='grep --color=auto' # colorize `grep` output
@@ -12,16 +20,16 @@ alias mv='mv -i' # confirm move
 
 # locations
 alias repos='cd $HOME/Documents/repos'
-alias le='cd $HOME/Documents/repos/learner-experience'
 alias personal='cd $HOME/Documents/repos/personal'
 alias infra='cd $HOME/Documents/repos/infra'
 alias shared='cd $HOME/Documents/repos/shared'
-alias ed='cd $HOME/Documents/repos/educators'
 
 # git
 alias g='git'
 alias pull='git pull'
 alias push='git push'
+alias status='git status'
+alias fetch='git fetch'
 alias cm='git add . && cz commit'
 alias co='git checkout'
 alias main='git checkout main'
@@ -40,3 +48,5 @@ alias nr='npm run'
 
 # misc
 alias tf='terraform'
+alias wtf='cat ~/.zsh/aliases.zsh'
+alias nc='run_or_install npm-check'
